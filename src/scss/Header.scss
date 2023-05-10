@@ -1,0 +1,98 @@
+// Variabili
+$color-primary: rgb(56, 91, 206);
+$color-secondary: rgb(119, 119, 119);
+$color-tertiary: rgb(39, 48, 68);
+$color-white: white;
+
+// Classi generali
+.btn-style {
+  color: $color-secondary;
+  border: 0;
+  background-color: $color-white;
+  padding: 20px;
+}
+
+.icon-padding {
+  margin-left: 10px;
+  color: $color-secondary;
+  cursor: pointer;
+}
+
+.icon-primary {
+  color: $color-primary;
+}
+
+.icon-tertiary {
+  color: $color-tertiary;
+}
+
+.btn-rounded {
+  border-radius: 30px;
+  padding: 10px 40px;
+  background-color: $color-primary;
+  color: $color-white;
+  border: 0;
+}
+
+.language-button {
+  background-color: $color-white;
+  color: $color-secondary; 
+  border: 0;
+  margin-left: 15px;
+}
+
+// Classi specifiche
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 15px;
+  height: 100px;
+}
+
+.lef-bar button {
+  margin-left: 15px;
+  width: 70px;
+}
+
+.dropdown-bottom button {
+  background-color: $color-white;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  color: $color-primary;
+}
+
+.dropdown-bottom i {
+  margin-right: 5px;
+  margin-left: 30px;
+}
+
+.no-arrow::after {
+  display: none;
+}
+
+.r-side {
+  cursor: pointer;
+}
+
+.log-sign {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.search {
+  border: 0;
+  background-color: $color-primary;
+  color: $color-white;
+  width: 60px;
+  height: 45px;
+}
