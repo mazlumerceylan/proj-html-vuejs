@@ -73,6 +73,24 @@
   </div>
 </div>
 
+
+<div class="possibilites">
+  <div class="lx">
+    <h1>
+      Limitless learning, more possibilities
+    </h1>
+    <p>
+      Online courses open the opportunity for learning to almost anyone, regardless of their scheduling commitments.
+    </p>
+    <div class="button-red">
+      <button>READ MORE</button>
+    </div>
+    
+  </div>
+  <div class="rx">
+    <img src="src/assets/img/image_box_1-221x231.png" alt="">
+  </div>
+</div>
 </template>
 
 <script>
