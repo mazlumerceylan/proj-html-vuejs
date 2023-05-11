@@ -265,3 +265,55 @@
   margin-right: 300px;
   
 }
+
+.recent-courses h1{
+  text-align: center;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+.menu li {
+  background: white;
+  padding: 10px;
+  border-radius: 10px; 
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.menu li.selected {
+  background: blue;
+  color: white;
+}
+
+.card-container{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .card{
+    flex-basis: calc(16% - 20px); 
+    margin-bottom: 20px; 
+
+    
+
+    img {
+      width: 100%;
+      height: 50%;
+    }
+
+
+    .card-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
