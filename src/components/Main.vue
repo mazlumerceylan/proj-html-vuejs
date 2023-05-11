@@ -105,31 +105,38 @@
 
 
 <div class="card-container">
-    <div class="card" v-for="(card, index) in cards" :key="index">
-      <img :src="card.img" alt="card image">
-      <span>{{ card.category }}</span>
-      <h6>{{ card.product }}</h6>
+    <div class="card" v-for="card in cards" :key="card.img">
+      <img :src="card.img" alt="Product image">
+      <p>{{ card.category }}</p>
+      <h2>{{ card.product }}</h2>
       <hr>
       <div class="card-bottom">
-        <div class="stars">
-          <!-- Add your star logic here -->
+        <div class="rating">
+          <i class="fas fa-star" v-for="n in card.rating" :key="n"></i>
         </div>
-        <span>{{ card.price }}$</span>
+        <p>
+          <template v-if="card.price && !isNaN(card.price)">
+          {{ card.price }}
+          </template>
+          <template v-else>
+            Free
+          </template>
+        </p>
       </div>
     </div>
-  </div>
+</div>
 </template>
 
 
-<script>
 
+
+<script>
 import { mapState } from 'vuex'
 
 export default {
   name: 'Main',
   computed: {
-    ...mapState(['menuItems']),
-    ...mapState(['cards'])
+    ...mapState(['menuItems', 'cards', 'products'])
   },
 }
 </script>
