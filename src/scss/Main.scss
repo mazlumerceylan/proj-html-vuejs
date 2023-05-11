@@ -4,7 +4,10 @@
   justify-content: center;
   align-items: center;
   height: 550px;
+  width: 80%;
+  margin: 0 auto;
 }
+
 
 .left-section {
   width: 50%;
@@ -55,7 +58,7 @@
   top: 40%;
   left: 60%;
   transform: translate(-50%, -50%);
-  width: 200px; /* specifica la larghezza dell'immagine sovrapposta */
+  width: 200px; 
   z-index: 2;
 }
 
@@ -64,7 +67,7 @@
   top: 70%;
   left: 45%;
   transform: translate(-50%, -50%);
-  width: 200px; /* specifica la larghezza dell'immagine sovrapposta */
+  width: 200px; 
   z-index: 2;
 }
 
@@ -96,7 +99,7 @@
 .card-icon{
   width: 365px;
   background-color: rgb(242 246 250);
-  margin: 32px 32px;
+  margin: 15px 15px;
   margin-top: 130px;
 }
 
@@ -120,4 +123,91 @@
   margin-top: 25px;
   padding-bottom: 25px;
   color: rgb(26 94 200);
+}
+
+.courses-category{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.card-ctg{
+  margin: 20px;
+}
+
+.photo-courses-need-fix{
+  margin-top: 28px;
+}
+.courses-category{
+  display: flex;
+  flex-direction: row;
+  margin-left: 180px;
+}
+
+
+.photo-courses-big {
+  width: 700px;
+  height: 385px;
+  transition: transform .2s;
+  display: block;
+}
+
+.card-ctg.big{
+  margin-left: 10px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.card-ctg.big p{
+  margin-top: 10px;
+}
+
+.card-ctg.small{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+
+.card-ctg.small p{
+  margin-top: 5px;
+}
+
+
+.photo-courses-small, .photo-courses-need-fix {
+  width: 100%;
+  height: auto;
+  transition: transform .2s;
+  display: block;
+}
+
+.card-ctg:hover .photo-courses-big, .card-ctg:hover .photo-courses-small, .card-ctg:hover .photo-courses-need-fix, 
+ {
+  transform: scale(1.03); 
+}
+
+.card--course-bottom {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.card--course-bottom img{
+  transition: transform .2s;
+}
+.card--course-bottom div:hover img {
+  transform: scale(1.03);
+}
+.card--course-bottom > div{
+  margin: 5px;
+}
+
+.card--course-bottom p{
+  padding-top: 10px;
 }
