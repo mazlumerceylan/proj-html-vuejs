@@ -211,3 +211,57 @@
 .card--course-bottom p{
   padding-top: 10px;
 }
+
+.possibilites{
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(240 244 250);
+  height: 600px;
+  
+}
+
+.possibilites .lx{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%; 
+}
+
+.possibilites .lx h1{
+  width: 450px;
+  font-size: 3rem;
+  padding: 30px;
+}
+
+.possibilites .lx p{
+  position: relative;
+  width: 450px;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+
+
+.possibilites .lx button{
+  background-color: rgb(26 94 200);
+  border-radius: 30px;
+  padding: 15px;
+  border: 0;
+  color: white;
+  
+}
+
+.possibilites .rx{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.possibilites .rx img{
+  width: 500px;
+  height: 500px;
+  margin-right: 300px;
+  
+}
