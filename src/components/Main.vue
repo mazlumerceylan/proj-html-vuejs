@@ -1,5 +1,5 @@
 <template>
-  <div class="jumbotron">
+<div class="jumbotron">
   <div class="left-section">
     <h1>Start Investing in Yourself</h1>
     <p>
@@ -36,7 +36,41 @@
     <h2>Brand certificate</h2>
     <p>After completing the course, you will receive a certificate confirming your knowledge.</p>
   </div>
+</div>
 
+
+<div class="courses-category">
+  <div class="card-ctg big">
+    <img class="photo-courses-big" src="src/assets/img/cat_1-770x375.jpg" alt="image">
+    <p>Software Developer</p>
+  </div>
+
+  <div class="card-ctg small">
+    <div>
+      <img class="photo-courses-small" src="src/assets/img/cat_2-370x155.jpg" alt="image">
+      <p>Art</p>
+    </div>
+    <div>
+      <img class="photo-courses-need-fix" src="src/assets/img/cat_3-370x155.jpg" alt="image">
+      <p>Material Design</p>
+    </div>
+  </div>
+</div>
+<div class="card--course-bottom">
+  <div>
+    <img src="src/assets/img/cat_5-370x155.jpg" alt="image">
+    <p>Music</p>
+  </div>
+
+  <div>
+    <img src="src/assets/img/cat_4-370x155.jpg" alt="image">
+    <p>Exercise</p>
+  </div>
+
+  <div>
+    <img src="src/assets/img/cat_6-370x155.jpg" alt="image">
+    <p>Photograohy</p>
+  </div>
 </div>
 
 </template>
