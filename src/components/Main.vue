@@ -16,6 +16,29 @@
   </div>
 </div>
 
+<div class="card-container">
+  <div class="card-icon">
+    <i class="fa-solid fa-earth-americas"></i>
+    <h2>Worldwide Trends</h2>
+    <p>Our services and collections adhere to cutting-edge solutions in the design world.
+    </p>
+  </div>
+
+  <div class="card-icon">
+    <i class="fa-solid fa-display"></i>
+    <h2>Complex Online Education</h2>
+    <p>We have everything for effective learning and delivery of assignments by students.
+    </p>
+  </div>
+
+  <div class="card-icon">
+    <i class="fa-regular fa-calendar"></i>
+    <h2>Brand certificate</h2>
+    <p>After completing the course, you will receive a certificate confirming your knowledge.</p>
+  </div>
+
+</div>
+
 </template>
 
 <script>
