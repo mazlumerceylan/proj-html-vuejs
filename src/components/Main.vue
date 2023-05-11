@@ -82,7 +82,7 @@
     <p>
       Online courses open the opportunity for learning to almost anyone, regardless of their scheduling commitments.
     </p>
-    <div class="button-red">
+    <div class="button-read">
       <button>READ MORE</button>
     </div>
     
@@ -91,13 +91,46 @@
     <img src="src/assets/img/image_box_1-221x231.png" alt="">
   </div>
 </div>
+
+<div class="recent-courses">
+  <h1>Recent Courses</h1>
+  <nav>
+    <ul class="menu">
+      <li v-for="(item, index) in menuItems" :key="index" :class="{selected: item.selected}">
+        {{ item.name }}
+      </li>
+    </ul>
+  </nav>
+</div>
+
+
+<div class="card-container">
+    <div class="card" v-for="(card, index) in cards" :key="index">
+      <img :src="card.img" alt="card image">
+      <span>{{ card.category }}</span>
+      <h6>{{ card.product }}</h6>
+      <hr>
+      <div class="card-bottom">
+        <div class="stars">
+          <!-- Add your star logic here -->
+        </div>
+        <span>{{ card.price }}$</span>
+      </div>
+    </div>
+  </div>
 </template>
 
+
 <script>
+
 import { mapState } from 'vuex'
 
 export default {
-
+  name: 'Main',
+  computed: {
+    ...mapState(['menuItems']),
+    ...mapState(['cards'])
+  },
 }
 </script>
 
