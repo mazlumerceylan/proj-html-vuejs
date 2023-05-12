@@ -211,7 +211,7 @@
     </div>
     <div class="steup">
       <div class="steup-image">
-        <img src="" alt="">
+        <img src="src/assets/img/image_box_2-234x231.png" alt="">
       </div>
       <div class="setup-text">
         <h3>Setup For Business</h3>
