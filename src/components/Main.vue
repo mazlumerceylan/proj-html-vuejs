@@ -160,8 +160,77 @@
     </div>
   </div>
   
+  <div class="subscribe-cont">
+    <div class="lx-side">
+      <h3>Subscribe our newsletter</h3>
+      <p>There are many variations of passages of Lorem Ipsum   available, but the majority have suffered alteration in some form, by injected humour, or randomised words</p>
+      <div class="rx-side">
+      <div class="rx-title">
+        <p>YOUR E-MAIL ADDRESS</p>
+      </div>
+      <div class="courses-input">
+        <input class="form-control me-2" type="search" placeholder="Search courses" aria-label="Search" />
+        <button>Search</button>
+      </div>
+    </div>
+    </div>
   </div>
 
+  <div class="popular-courses-cont">
+    <h1>Popular courses</h1>
+    <p>Discover our most popular courses for self learning</p>
+  </div>
+  <div class="card-container">
+    <div class="card" v-for="product in cards.slice(0, 6)" :key="product.product">
+      <img :src="product.img" :alt="product.category">
+      <p>{{ product.category }}</p>
+      <h2>{{ product.product }}</h2>
+      <div class="rating">
+        <i class="fas fa-star" v-for="n in product.rating" :key="n"></i>
+      </div>
+      <div class="price" v-if="product.price !== 'Free'">
+        <span>${{ product.price }}</span>
+      </div>
+      <div class="price" v-else>
+        <span>Free</span>
+      </div>
+      <div class="status">{{ product.status }}</div>
+    </div>
+  </div>
+
+  <div class="business-cont">
+    <div class="instructor">
+      <div class="instructor-image">
+        <img src="src/assets/img/image_box_1-221x231.png" alt="">
+      </div>
+      <div class="instructor-text">
+        <h3>Become an Instructor</h3>
+        <p>Teach what you love. Masterstudy gives you the tools to create a course.</p>
+        <button>START TEACHING</button>
+      </div>
+    </div>
+    <div class="steup">
+      <div class="steup-image">
+        <img src="" alt="">
+      </div>
+      <div class="setup-text">
+        <h3>Setup For Business</h3>
+        <p>Get unlimited access to 2,500 of Udemy’s top courses for your team.</p>
+        <button>DOING BUSSINES</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="background-container">
+    <div class="content-container">
+      <p>Come as you are
+        MasterStudy used is an excellent workshop whether you come as a counselor, advisor, administrator, or faculty member. I am going home empowered. I am looking forward to attending the On Course MasterStudy and the MasterStudy National Conference next year and facilitating the use of this excellent retention/student success course at my college.
+
+        <h3><strong>Tim Sab</strong> </h3>
+        <span>General Developer, Stylemix Themes</span>
+      </p>
+    </div>
+  </div>
 </template>
 
 
@@ -171,6 +240,7 @@
 import { mapState } from 'vuex'
 
 export default {
+  name: 'BackgroundContainer',
   name: 'Main',
   computed: {
     ...mapState(['menuItems', 'cards', 'products'])
