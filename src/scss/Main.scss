@@ -416,11 +416,152 @@
 }
 
 .subscribe-cont{
+  display: flex;
+  flex-direction: row;
   width: 100%;
   height: 200px;
   background-color: rgb(79 215 168);
 }
 
+.subscribe-cont .rx-side{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+ 
+  
+}
+button{
+  border: 0;
+}
+
+.rx-side .rx-title{
+  
+}
+
 .subscribe-cont .lx-side{
-  width: 50%;
+  display: flex;
+  text-align: start;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 15px;
+  color: white;
+  width: 600px;
+}
+
+.courses-input{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.lx-side button{
+  background-color: rgb(26 94 200);
+  color: white;
+  width: 350px;
+}
+
+.popular-courses-cont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  background-color: rgb(240 244 250);
+}
+
+card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgb(240 244 250);
+}
+
+.business-cont {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.instructor,
+.steup {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 150px;
+}
+
+.instructor-image,
+.steup-image {
+  flex: 0 0 auto;
+}
+
+.instructor-image img,
+.steup-image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.instructor-text,
+.setup-text {
+  flex: 1 1 auto;
+}
+
+.instructor-text h3,
+.setup-text h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.instructor-text p,
+.setup-text p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.instructor-text button,
+.setup-text button {
+  background-color: rgb(26 94 200);
+  color: wheat;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.background-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  background-image: url('../assets/img/micah-296507-unsplash-1-copy-1-1920x700.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  height: 80%;
+  background-color: rgba(255, 255, 255, 0.7); 
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.content-container  p{
+  font-size: 1rem;
+  padding: 20px;
 }
